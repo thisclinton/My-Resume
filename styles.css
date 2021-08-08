@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 1rem 0 0 0;
+    background-color: black;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 0.6em;
+
+}
+
+main{
+    text-align: center;
+    height: 80vh;
+}
+
+
+.img-avatar{
+    height: 250px; 
+    margin-top: 5rem;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 10000px;
+    -webkit-border-radius: 10000px;
+    -moz-border-radius: 10000px;
+    -ms-border-radius: 10000px;
+    -o-border-radius: 10000px;
+}
+
+.about-self{
+    padding: 1em 0 0 0;
+}
+
+p{
+    padding-bottom: 1em;
+}
+
+
+.btn-explore{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #A11;
+    font-size: .5rem;
+    padding: 1em 3em;
+    border-radius: .3em;
+    -webkit-border-radius: .3em;
+    -moz-border-radius: .3em;
+    -ms-border-radius: .3em;
+    -o-border-radius: .3em;
+}
+
+.btn-explore:hover, .btn-explore:focus{
+    background-color: rgb(14, 134, 150);
+    box-shadow: 0 0 3px 0 rgb(14, 134, 150);   
+}
+
+footer{
+    padding-top: em;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a{
+    text-decoration: none;
+}
