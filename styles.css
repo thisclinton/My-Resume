@@ -6,7 +6,6 @@ body{
     margin: 1rem 0 0 0;
     background-color: black;
     color: white;
-    border: 2px solid white;
 }
 
 nav ul{
@@ -21,7 +20,7 @@ nav ul{
 
 main{
     text-align: center;
-    height: 75vh;
+    height: 65vh;
 }
 
 
@@ -71,7 +70,7 @@ footer{
 }
 
 footer a{
-    margin-top: 1rem;
+    margin-top: 4rem;
     text-decoration: none;
 
 }
