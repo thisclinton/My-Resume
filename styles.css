@@ -4,8 +4,8 @@
 
 body{
     margin: 1rem 0 0 0;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 nav ul{
@@ -28,7 +28,7 @@ main{
     height: 130px; 
     margin-top: 5rem;
     text-align: center;
-    background-color: #FFF;
+    background-color: rgba(0, 0, 0, 0.801);
     border-radius: 10000px;
     -webkit-border-radius: 10000px;
     -moz-border-radius: 10000px;
@@ -49,7 +49,7 @@ p{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    background-color: #A11;
+    background-color: rgba(0, 0, 0, 0.801);
     font-size: .5rem;
     padding: 1em 3em;
     border-radius: .3em;
@@ -73,4 +73,9 @@ footer a{
     margin-top: 4rem;
     text-decoration: none;
 
+}
+
+footer a img{
+    height: 35px;
+    width: 25px;
 }
