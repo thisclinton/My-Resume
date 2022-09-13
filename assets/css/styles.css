@@ -11,6 +11,7 @@
     --text-color: hsl(0, 2%, 40%);
     --text-color-light: hsl(0, 0%, 99%);
     --button-color: hsl(0, 0%, 17%);
+    --img-bg: hsl(0, 0%, 15%);
     --mg-1: 1rem;
     --mg-1-5: 1.5rem;
     --mg-2-0: 2rem;
@@ -39,6 +40,7 @@ body.dark-theme {
     --body-color: hsl(0, 0%, 10%);
     --text-color: hsl(0, 0%, 70%);
     --text-color-light: hsl(0, 0%, 80%);
+    --img-bg: hsl(0, 0%, 15%);
     --button-color: hsl(0, 0%, 17%);
 }
 
@@ -189,7 +191,7 @@ a {
 
 .img-avatar {
     width: 60%;
-    background-color: hsl(0, 0%, 25%);
+    background-color: var(--img-bg);
     border-radius: 20rem;
 }
 
