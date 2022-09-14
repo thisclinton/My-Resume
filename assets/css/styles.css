@@ -46,6 +46,8 @@ body.dark-theme {
 
 .container {
     margin: 0 var(--mg-1-5);
+    z-index: -20;
+    overflow: hidden;
 }
 
 button, 
@@ -66,6 +68,10 @@ a {
     cursor: pointer;
 }
 
+section {
+    position: relative;
+}
+
 .btn {
     cursor: pointer;
 }
@@ -80,7 +86,7 @@ a {
    display: flex;
    justify-content: space-between;
    padding: var(--pd-1-5) 0 .45rem;
-   z-index: 999;
+   z-index: -1;
 }
 
 .nav__logo {
@@ -96,7 +102,7 @@ a {
     transform: translateX(100%);
     height: 100%;
     width: 100%;
-    z-index: 999;
+    z-index: 100;
     background-color: var(--body-color);
     padding: var(--pd-1-5);
     transition: .5s;
@@ -180,9 +186,19 @@ a {
 
 .hero__title {
     text-align: center;
-    font-size: 4rem;
-
+    font-size: 3rem;
+    text-transform: uppercase;
 }
+
+/* .hero__title::after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--body-color);
+    height: 100%;
+    width: 100%;
+} */
 
 .hero__img {
     margin: var(--mg-2-5) 0;
@@ -222,6 +238,10 @@ a {
 .about__title {
     font-size: 2rem;
     margin-bottom: var(--mg-1);
+}
+
+.about__description {
+    font-size: 1.5rem;
 }
 
 .featured__title {

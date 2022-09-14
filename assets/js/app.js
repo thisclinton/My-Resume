@@ -27,3 +27,60 @@ themeToggleBtn.addEventListener("click", () => {
     localStorage.removeItem("currentTheme");
   }
 });
+
+let tl = gsap.timeline({ defaults: { duration: 1 } });
+
+tl.from(
+  ".img-avatar",
+  {
+    opacity: 0,
+    ease: "power4",
+    scale: 1.2,
+  },
+  1.5
+)
+  .from(
+    ".hero__title",
+    {
+      opacity: 0,
+      y: 30,
+      ease: "power3",
+    },
+    0.6
+  )
+  .from(
+    ".hero__name",
+    {
+      opacity: 0,
+      x: -300,
+      ease: "power4",
+    },
+    0.9
+  )
+  .from(
+    ".hero__scroll",
+    {
+      opacity: 0,
+      x: -300,
+      ease: "power4",
+    },
+    1.1
+  )
+  .from(
+    ".hero__description",
+    {
+      opacity: 0,
+      x: 300,
+      ease: "power4",
+    },
+    1.1
+  );
+
+gsap.from(".about__description", {
+  scrollTrigger: ".about__description",
+  x: 200,
+  y: 50,
+  start: "top middle",
+  duration: 1,
+  ease: "power4.easeInOut",
+});
