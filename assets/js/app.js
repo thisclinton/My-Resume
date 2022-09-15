@@ -5,10 +5,21 @@ const themeToggleBtn = document.querySelector("#theme-toggle");
 
 navOpen.addEventListener("click", () => {
   navMenu.classList.add("show-menu");
+  gsap.to(".bg-slider span", {
+    x: "-100%",
+    duration: 0.7,
+    ease: "power4.easeIn",
+    stagger: 0.1,
+  });
 });
 
 navClose.addEventListener("click", () => {
   navMenu.classList.remove("show-menu");
+  gsap.to(".bg-slider span", {
+    x: "100%",
+    ease: "power4.easeIn",
+    stagger: 0.2,
+  });
 });
 
 const bodyElement = document.body;
@@ -77,10 +88,45 @@ tl.from(
   );
 
 gsap.from(".about__description", {
-  scrollTrigger: ".about__description",
+  scrollTrigger: {
+    trigger: ".about__description",
+    start: "50px 80%",
+  },
   x: 200,
-  y: 50,
-  start: "top middle",
-  duration: 1,
+  duration: 1.5,
   ease: "power4.easeInOut",
+});
+
+gsap.from(".about__title", {
+  scrollTrigger: {
+    trigger: ".about__title",
+    start: "50px 80%",
+  },
+  opacity: 0,
+  duration: 1,
+  ease: "power4.easeIn",
+});
+
+gsap.to(".featured__shade", {
+  scrollTrigger: {
+    trigger: ".featured__shade",
+    start: "30px 80%",
+    markers: true,
+  },
+  x: "-100%",
+  duration: 2,
+  ease: "power4.easeIn",
+  delay: 1,
+});
+
+gsap.from(".featured__img", {
+  scrollTrigger: {
+    trigger: ".featured__img",
+    start: "30px 80%",
+  },
+  opacity: 0,
+  duration: 4,
+  ease: "power4",
+  scale: 1.2,
+  stagger: 1,
 });
