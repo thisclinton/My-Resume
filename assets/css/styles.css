@@ -68,12 +68,38 @@ a {
     cursor: pointer;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 section {
     position: relative;
 }
 
 .btn {
     cursor: pointer;
+}
+
+.preloader {
+    position: fixed;
+    left: 7rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.7);
+    z-index: 200;
+    opacity: 0;
+}
+
+.preloader__img {
+    width: 150px;
+    height: 150px;
+}
+
+.wrapper {
+    opacity: 0;
 }
 
 .header {

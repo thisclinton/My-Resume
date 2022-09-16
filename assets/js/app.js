@@ -39,53 +39,55 @@ themeToggleBtn.addEventListener("click", () => {
   }
 });
 
-let tl = gsap.timeline({ defaults: { duration: 1 } });
+function heroAnimate() {
+  const tl = gsap.timeline({ defaults: { duration: 1 } });
 
-tl.from(
-  ".img-avatar",
-  {
-    opacity: 0,
-    ease: "power4",
-    scale: 1.2,
-  },
-  1.5
-)
-  .from(
-    ".hero__title",
+  tl.from(
+    ".img-avatar",
     {
       opacity: 0,
-      y: 30,
-      ease: "power3",
-    },
-    0.6
-  )
-  .from(
-    ".hero__name",
-    {
-      opacity: 0,
-      x: -300,
       ease: "power4",
+      scale: 1.2,
     },
-    0.9
+    1.5
   )
-  .from(
-    ".hero__scroll",
-    {
-      opacity: 0,
-      x: -300,
-      ease: "power4",
-    },
-    1.1
-  )
-  .from(
-    ".hero__description",
-    {
-      opacity: 0,
-      x: 300,
-      ease: "power4",
-    },
-    1.1
-  );
+    .from(
+      ".hero__title",
+      {
+        opacity: 0,
+        y: 30,
+        ease: "power3",
+      },
+      0.6
+    )
+    .from(
+      ".hero__name",
+      {
+        opacity: 0,
+        x: -300,
+        ease: "power4",
+      },
+      0.9
+    )
+    .from(
+      ".hero__scroll",
+      {
+        opacity: 0,
+        x: -300,
+        ease: "power4",
+      },
+      1.1
+    )
+    .from(
+      ".hero__description",
+      {
+        opacity: 0,
+        x: 300,
+        ease: "power4",
+      },
+      1.1
+    );
+}
 
 gsap.from(".about__description", {
   scrollTrigger: {
@@ -111,7 +113,6 @@ gsap.to(".featured__shade", {
   scrollTrigger: {
     trigger: ".featured__shade",
     start: "30px 80%",
-    markers: true,
   },
   x: "-100%",
   duration: 2,
@@ -130,3 +131,57 @@ gsap.from(".featured__img", {
   scale: 1.2,
   stagger: 1,
 });
+
+gsap.from(".preloader__img", {
+  scale: 1.1,
+  ease: "power1",
+  duration: 0.5,
+  repeat: -1,
+  yoyo: true,
+});
+
+loader = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+loader
+  .to(".preloader", {
+    scale: "1",
+    opacity: 1,
+    delay: 1,
+  })
+  .to(".preloader", { opacity: 0, delay: 5 })
+  .to(".wrapper", { opacity: 1 })
+  .from(
+    ".img-avatar",
+    {
+      opacity: 0,
+      ease: "power4",
+      scale: 1.2,
+    },
+    "-=0.3"
+  )
+  .from(".hero__title", {
+    opacity: 0,
+    y: 30,
+    ease: "power3",
+    duration: 0.7,
+  })
+  .from(".hero__name", {
+    opacity: 0,
+    x: -300,
+    ease: "power4",
+    delay: 0.1,
+  })
+  .from(".hero__scroll", {
+    opacity: 0,
+    x: -300,
+    ease: "power4",
+  })
+  .from(
+    ".hero__description",
+    {
+      opacity: 0,
+      x: 300,
+      ease: "power3",
+    },
+    "-=.1"
+  );
