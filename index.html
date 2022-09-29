@@ -9,10 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-    <div class="preloader">
+  <!--   <div class="preloader">
         <img class="preloader__img" src="Avatar-1.png" alt="">
-    </div>
-    <div class="wrapper">
+    </div> -->
+    <!-- <svg  viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path class="bluee" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+    </svg> -->
+    <div class="wrapper is-loading">
         <header class="header">
             <nav class="nav container" id="nav">
                 <a href="#" class="nav__logo">
@@ -82,36 +85,45 @@
                 </div>
             </nav>
         </header>
+
         <main>
             <section class="hero container">
                 <div class="hero__container">
                     <div class="hero__img">
                         <img src="Avatar-1.png" alt="Memoji" class="img-avatar">
                     </div>
-                    <p class="hero__name">
-                        Clinton mgbemene
-                    </p>
-                    <h1 class="hero__title">
-                        Frontend <br> Developer
-                    </h1>
-                    <div class="hero__footer">
-                      <div class="hero__scroll">
-                        <svg class="hero__svg" width="24" height="74" viewBox="0 0 24 74" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.9393 73.0607C11.5251 73.6464 12.4749 73.6464 13.0607 73.0607L22.6066 63.5147C23.1924 62.9289 23.1924 61.9792 22.6066 61.3934C22.0208 60.8076 21.0711 60.8076 20.4853 61.3934L12 69.8787L3.51472 61.3934C2.92893 60.8076 1.97919 60.8076 1.3934 61.3934C0.807617 61.9792 0.807617 62.9289 1.3934 63.5147L10.9393 73.0607ZM10.5 0V72H13.5V0H10.5Z" fill-opacity="0.5"></path></svg>
-                        <span>Keep scrolling</span>
-                      </div>
-                      <span class="hero__description">
-                        I build beautiful web applications for fun.
-                      </span>  
+
+                    <div class="hero__detail">
+                        <p class="hero__name">
+                            Clinton mgbemene
+                        </p>
+                        <h1 class="hero__title">
+                            Frontend <br> Developer
+                        </h1>
+                        <div class="hero__footer">
+                          <div class="hero__scroll">
+                            <svg class="hero__svg" width="24" height="74" viewBox="0 0 24 74" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.9393 73.0607C11.5251 73.6464 12.4749 73.6464 13.0607 73.0607L22.6066 63.5147C23.1924 62.9289 23.1924 61.9792 22.6066 61.3934C22.0208 60.8076 21.0711 60.8076 20.4853 61.3934L12 69.8787L3.51472 61.3934C2.92893 60.8076 1.97919 60.8076 1.3934 61.3934C0.807617 61.9792 0.807617 62.9289 1.3934 63.5147L10.9393 73.0607ZM10.5 0V72H13.5V0H10.5Z" fill-opacity="0.5"></path></svg>
+                            <span>Keep scrolling</span>
+                          </div>
+                          <span class="hero__description">
+                            I build beautiful web applications for fun.
+                          </span>  
+                        </div>
                     </div>
+                    
                 </div>
             </section>
+
             <section class="about container">
                 <div class="about__container">
                     <h2 class="about__title">
                         About Me
                     </h2>
                     <p class="about__description">
-                        I am a developer based in Lagos, Nigeria focused on creating interactive digital experiences on the web, working with brands and industry leaders such as DISNEY, PAYSTACK, JELLY, and NULL amongst others to achieve this.
+                        I am a developer based in Lagos, Nigeria focused on creating interactive digital experiences on the web,
+                    </p>
+                    <p class="about__description">
+                        working with brands and industry leaders such as DISNEY, PAYSTACK, JELLY, and NULL amongst others to achieve this.
                     </p>
                 </div>
             </section>
@@ -121,9 +133,11 @@
                     <h2 class="featured__title">
                         Featured Projects
                     </h2>
-                    <a href="#" class="featured__link">
+                    
+                    <article class="featured__article">
                         <span class="featured__number">01/04</span>
-                        <article class="featured__article">
+
+                        <a href="#" class="featured__link"></a>
                             <div class="img__container">
                                 <div class="featured__arrow">
                                     <i class="ri-arrow-right-up-line"></i>
@@ -131,26 +145,27 @@
     
                                 <img src="https://images.unsplash.com/photo-1661956601349-f61c959a8fd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" class="featured__img">
                             </div>
-                        </article>
-                    </a>
-    
-                    <a href="#" class="featured__link">
+                        </a>
+                    </article>
+                    
+                    <article class="featured__article">
                         <span class="featured__number">02/04</span>
-                        <article class="featured__article">
+
+                        <a href="#" class="featured__link"></a>
                             <div class="img__container">
-                                <div class="featured__shade"></div>
                                 <div class="featured__arrow">
                                     <i class="ri-arrow-right-up-line"></i>
                                 </div>
     
                                 <img src="https://images.unsplash.com/photo-1661956601349-f61c959a8fd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" class="featured__img">
                             </div>
-                        </article>
-                    </a>
-    
-                    <a href="#" class="featured__link">
+                        </a>
+                    </article>
+
+                    <article class="featured__article">
                         <span class="featured__number">03/04</span>
-                        <article class="featured__article">
+
+                        <a href="#" class="featured__link"></a>
                             <div class="img__container">
                                 <div class="featured__arrow">
                                     <i class="ri-arrow-right-up-line"></i>
@@ -158,12 +173,13 @@
     
                                 <img src="https://images.unsplash.com/photo-1661956601349-f61c959a8fd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" class="featured__img">
                             </div>
-                        </article>
-                    </a>
-    
-                    <a href="#" class="featured__link">
+                        </a>
+                    </article>
+
+                    <article class="featured__article">
                         <span class="featured__number">04/04</span>
-                        <article class="featured__article">
+
+                        <a href="#" class="featured__link"></a>
                             <div class="img__container">
                                 <div class="featured__arrow">
                                     <i class="ri-arrow-right-up-line"></i>
@@ -171,9 +187,9 @@
     
                                 <img src="https://images.unsplash.com/photo-1661956601349-f61c959a8fd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" class="featured__img">
                             </div>
-                        </article>
-                    </a>
-    
+                        </a>
+                    </article>
+
                     <a href="#" class="featured__more">View More</a>
                 </div>
             </section>
